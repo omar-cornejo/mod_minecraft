@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import vaper.ruben.init.blockinit;
 import vaper.ruben.init.iteminit;
 
 public class Vaperruben implements ModInitializer {
@@ -21,6 +22,7 @@ public class Vaperruben implements ModInitializer {
 
 		LOGGER.info("Loading...");
 		iteminit.load();
+		blockinit.load();
 	}
 
 	public static Identifier id(String path) {
