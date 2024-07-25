@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "vaper-ruben",
+	"version": "${version}",
+	"name": "vaper-ruben",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/vaper-ruben/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"vaper.ruben.Vaperruben"
+		],
+		"client": [
+			"vaper.ruben.VaperrubenClient"
+		],
+		"fabric-datagen": [
+			"vaper.ruben.VaperrubenDataGenerator"
+		]
+	},
+	"mixins": [
+		"vaper-ruben.mixins.json",
+		{
+			"config": "vaper-ruben.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
